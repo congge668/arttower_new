@@ -51,6 +51,7 @@ public class VideoListFragment extends BaseMvpFragment<HomeModel> {
     public void initData() {
         EventBusUtils.register(this);
         mPresenter.getData(ApiConfig.VIDEO_DATA, offset, rows);
+
     }
 
     private void refreshListDatas() {

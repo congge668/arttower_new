@@ -5,6 +5,8 @@ import com.example.arttower.Frame.ICommonModel;
 import com.example.arttower.Frame.ICommonView;
 import com.example.arttower.Frame.NetManager;
 
+import retrofit2.http.Query;
+
 /*
  * 首页视频
  * */
@@ -12,6 +14,11 @@ public class HomeModel implements ICommonModel {
 
     private int rows;
     private int offset;
+
+    private String userId;
+    private String videoId;
+    private String uid;
+    private String content;
 
     @Override
     public void getData(ICommonView view, int whichApi, Object[] t) {
@@ -40,6 +47,16 @@ public class HomeModel implements ICommonModel {
             case ApiConfig.CARRYOUT:
                 mManager.method(mManager.getNetManager().getNetService().getCarryoutAdvertisingInfo(), view, whichApi);
                 break;
+            case ApiConfig.home_comment_list:
+                offset = (int) t[0];
+                rows = (int) t[1];
+                 userId= (String) t[2];
+                 videoId= (String) t[3];
+                uid= (String) t[4];
+                content = (String) t[5];
+                mManager.method(mManager.getNetManager().getNetService().queryCommentList(offset,rows,userId,videoId,uid,content), view, whichApi);
+                break;
+
         }
     }
 }

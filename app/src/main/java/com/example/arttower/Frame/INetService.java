@@ -1,5 +1,6 @@
 package com.example.arttower.Frame;
 
+import com.example.arttower.bean.BaseTestBean;
 import com.example.arttower.other.AliPayOrderInfoBean;
 import com.example.arttower.bean.AlterBitmapBean;
 import com.example.arttower.bean.AlterUserBean;
@@ -391,4 +392,8 @@ public interface INetService {
     @GET("ypt/account/queryDanceMoney")
     Observable<ToUpWuBiBean> gettoupWubInfo(@Query("deviceType") String deviceType);
 
+    @GET("ypt/video/queryCommentList")
+    Observable<BaseTestBean> queryCommentList(@Query("offset") int offset,@Query("rows") int rows,@Query("userId") String userId,
+                                              @Query("videoId") String videoId,@Query("uid") String uid,
+                                              @Query("content") String content);
 }
