@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+
+    android:layout_width="@dimen/dp_90"
+    android:textColor="@color/cl_231304"
+    android:textSize="@dimen/sp_18"
+    android:text="向老师提问"
+    android:layout_marginLeft="@dimen/dp_143"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_height="@dimen/dp_25"/>
+<ImageView
+    android:id="@+id/up_return"
+    android:layout_width="@dimen/dp_24"
+    android:src="@mipmap/returnleft"
+    android:layout_marginTop="@dimen/dp_17"
+    android:layout_marginLeft="16dp"
+    android:layout_height="@dimen/dp_24"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_marginLeft="@dimen/dp_145"
+    android:layout_marginTop="@dimen/dp_55"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="向"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_height="@dimen/dp_17"/>
+    <TextView
+        android:id="@+id/up_teacher_quiz_name"
+        android:layout_width="wrap_content"
+        android:text="李妍"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/cl_ff7b00"
+        android:layout_height="@dimen/dp_17"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="老师提问"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_height="@dimen/dp_17"/>
+
+</LinearLayout>
+
+        <EditText
+            android:id="@+id/up_teacher_quiz_ed"
+            android:layout_width="@dimen/dp_343"
+            android:layout_marginTop="@dimen/dp_89"
+            android:background="@null"
+            android:textColorHint="@color/cl_231304"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_14"
+            android:gravity="top"
+            android:text="请问老师如何在跳芭蕾的时候站的更稳？练习芭蕾有哪些需要注意的知识要点？我是初学者，老师可以帮我指点一些注意事项吗？"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_height="@dimen/dp_160"/>
+
+    </RelativeLayout>
+<!--<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rlvimage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/dy_image"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:background=" #F4F4F4 " />
+
+        <ImageView
+            android:id="@+id/dy_paizhao"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_jiahao" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/dp_343"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/cl_f2f2f2"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="@dimen/dp_72"
+            android:text="匿名提问"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#000000"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_height="@dimen/dp_25"/>
+
+        <Switch
+            android:id="@+id/up_switch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="@dimen/dp_48"
+            android:thumb="@drawable/switch_button_thump"
+            android:track="@drawable/switch_button_selector"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_280"
+            android:layout_marginTop="@dimen/dp_25"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_343"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@color/cl_f2f2f2"
+            android:layout_height="1dp"/>
+        <Button
+            android:id="@+id/up_teacher_submit"
+            android:layout_width="@dimen/dp_298"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginTop="@dimen/dp_80"
+            android:background="@drawable/shape_submit"
+            android:gravity="center"
+            android:text="@string/fabiao"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+</LinearLayout>

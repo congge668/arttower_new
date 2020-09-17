@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_140">
+
+            <ImageView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_10"
+                android:src="@mipmap/upquotes" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_295"
+                android:layout_marginTop="@dimen/dp_95"
+                android:layout_marginRight="@dimen/dp_28"
+                android:src="@mipmap/downquotes" />
+
+
+            <TextView
+                android:id="@+id/teacher_jieshao_content"
+                android:layout_width="@dimen/dp_247"
+                android:layout_height="@dimen/dp_53"
+                android:layout_marginLeft="@dimen/dp_64"
+                android:layout_marginTop="@dimen/dp_45"
+                android:layout_marginRight="@dimen/dp_16"
+                android:text="芭蕾是一种表现语言，表现语言是可以通过听觉视觉来感受它所带来的故事的，而柔和芭蕾可以让芭蕾本身变的更舒服更动听。"
+                android:textColor="@color/cl_231304"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_271"
+                android:layout_marginTop="@dimen/dp_85"
+                android:layout_marginRight="16dp"
+                android:text="——李妍"
+                android:textColor="@color/cl_231304"
+                android:textSize="@dimen/sp_10" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--                教学资质                         -->
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_4"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_38"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_53"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_84"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_128"
+                android:background="@drawable/shape_submit" />
+
+            <!--              教学经历                -->
+            <TextView
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:text="教学资质"
+                android:textColor="@color/cl_231304"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="@dimen/dp_96"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_38"
+                android:layout_marginTop="@dimen/dp_28"
+                android:text="教师资格证编号："
+                android:textColor="@color/cl_666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/teacher_jieshao_code"
+                android:layout_width="@dimen/dp_96"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_134"
+                android:layout_marginTop="@dimen/dp_28"
+                android:text="2018254624755249"
+                android:textColor="@color/cl_666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_49"
+                android:text="教学经历"
+                android:textColor="@color/cl_231304"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/teacher_jieshao_undergo_one"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_38"
+                android:layout_marginTop="@dimen/dp_77"
+                android:text="2014年6月 - 至今
+北京舞蹈学院主讲教师"
+                android:textColor="@color/cl_666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/teacher_jieshao_undergo_two"
+                android:layout_width="@dimen/dp_144"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginLeft="@dimen/dp_38"
+                android:layout_marginTop="@dimen/dp_120"
+                android:text="2014年6月 - 至今
+北京舞蹈学院主讲教师"
+                android:textColor="@color/cl_666666"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+        <!--              教学成就                   -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_50"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_68"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_86"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_104"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_135"
+                android:background="@drawable/shape_submit" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_166"
+                android:background="@drawable/shape_submit" />
+
+
+            <!--                      个人特色                      -->
+            <TextView
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="教学成就"
+                android:textColor="@color/cl_231304"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="@dimen/dp_156"
+                android:layout_height="@dimen/dp_71"
+                android:layout_marginLeft="@dimen/dp_38"
+                android:layout_marginTop="@dimen/dp_44"
+                android:text="黑池舞蹈节最佳编舞教师
+中国荷花奖最佳编舞教师
+培训学员数十万，教师数万名
+“全网零差评”口碑教师"
+                android:textColor="@color/cl_666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_131"
+                android:text="个人特色"
+                android:textColor="@color/cl_231304"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/teacher_jieshao_feature_content"
+                android:layout_width="@dimen/dp_228"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_38"
+                android:layout_marginTop="@dimen/dp_159"
+                android:text="轻松幽默的授课风格，专业认真的教学管理"
+                android:textColor="@color/cl_666666"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+</LinearLayout>

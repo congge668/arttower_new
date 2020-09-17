@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10">
+
+        <Button
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_63"
+            android:background="@drawable/shape_appraise"
+            android:gravity="center"
+            android:text="讲解清楚"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="@dimen/sp_9" />
+
+        <Button
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_104"
+            android:layout_marginTop="@dimen/dp_63"
+            android:background="@drawable/shape_appraise"
+            android:gravity="center"
+            android:text="讲解清楚"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="@dimen/sp_9" />
+
+        <Button
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_172"
+            android:layout_marginTop="@dimen/dp_63"
+            android:background="@drawable/shape_appraise"
+            android:gravity="center"
+            android:text="讲解清楚"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="@dimen/sp_9" />
+
+        <ImageView
+            android:id="@+id/item_appraise_headimg"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:src="@drawable/touxiang" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_343"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_144"
+            android:background="@color/cl_f2f2f2" />
+
+        <TextView
+            android:id="@+id/item_appraise_username"
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="宇宙少女的梦"
+            android:textColor="@color/cl_231304"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/item_appraise_count"
+            android:layout_width="@dimen/dp_233"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_86"
+            android:text="李老师讲的可有道理，听懂了  嘻嘻嘻"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="@dimen/dp_153"
+            android:layout_height="@dimen/dp_14"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_114"
+            android:text="课程：舒缓芭蕾 - 让芭蕾变得柔和"
+            android:textColor="@color/cl_c2c0be"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/item_appraise_time"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_14"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_41"
+            android:text="6月4日"
+            android:textColor="@color/cl_c2c0be"
+            android:textSize="@dimen/sp_10" />
+
+    </RelativeLayout>
+</LinearLayout>

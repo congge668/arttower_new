@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".activity.StarUpActivity">
+<ImageView
+    android:id="@+id/carryout_img"
+    android:layout_width="@dimen/dp_250"
+    android:layout_marginLeft="@dimen/dp_50"
+
+    android:layout_height="@dimen/dp_200"/>
+    <TextView
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_70"
+        android:text="听舞"
+        android:textStyle="normal"
+        android:layout_marginLeft="@dimen/dp_135"
+        android:layout_marginTop="@dimen/dp_193"
+        android:textColor="@color/color_weibo_iconbg"
+        android:textSize="45sp" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_163"
+        android:layout_marginTop="555dp"
+        android:layout_marginRight="@dimen/dp_164"
+        android:layout_marginBottom="@dimen/dp_64"
+        android:src="@mipmap/tingwu" />
+
+    <TextView
+        android:id="@+id/starup_te"
+        android:layout_width="@dimen/dp_260"
+        android:layout_height="@dimen/dp_23"
+        android:layout_marginLeft="@dimen/dp_57"
+        android:layout_marginTop="@dimen/dp_281"
+        android:text="人   人   艺   术  ·  艺   术   人   人"
+        android:textSize="@dimen/sp_18" />
+
+</RelativeLayout>

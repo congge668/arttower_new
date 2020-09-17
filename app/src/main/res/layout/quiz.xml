@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tiwen"
+    android:layout_width="@dimen/dp_60"
+    android:layout_height="@dimen/dp_60"
+    android:background="@drawable/shape_yuan">
+
+    <ImageView
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@mipmap/quiz" />
+
+    <TextView
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="@dimen/dp_13"
+        android:layout_marginLeft="@dimen/dp_19"
+        android:layout_marginTop="@dimen/dp_34"
+        android:text="提问"
+        android:textColor="@color/white"
+        android:textSize="9sp" />
+</RelativeLayout>

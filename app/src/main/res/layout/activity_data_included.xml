@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DataIncludedActivity">
+    //标题
+
+    <com.example.arttower.design.CommonTitle
+        android:id="@+id/AccountData_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="信息收录"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <TextView
+                    android:layout_width="@dimen/dp_108"
+                    android:layout_height="@dimen/dp_17"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/dp_251"
+                    android:text="请如实填写以下信息"
+                    android:textColor="@color/cl_c2c0be"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_33"
+                    android:text="基本信息"
+                    android:textColor="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+                <!--  姓名  -->
+                <TextView
+                    style="@style/twoText"
+                    android:layout_marginTop="@dimen/dp_61"
+                    android:text="姓名" />
+
+                <EditText
+                    android:layout_width="@dimen/dp_297"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:background="@null"
+                    android:hint="康明那"
+                    android:textColorHint="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_89"
+                    android:background="@color/cl_c2c0be" />
+
+
+                <!--  英文名  -->
+                <TextView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_98"
+                    android:text="英文名"
+                    android:textColor="@color/cl_c2c0be"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:layout_width="@dimen/dp_297"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_90"
+                    android:background="@null"
+                    android:hint="Kang Mingna"
+                    android:textColorHint="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_126"
+                    android:background="@color/cl_c2c0be" />
+
+                <!-- 性别  -->
+                <TextView
+                    style="@style/twoText"
+                    android:layout_marginTop="@dimen/dp_135"
+                    android:text="性别" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_135"
+                    android:text="女"
+                    android:textColor="@color/cl_231304" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_335"
+                    android:layout_marginTop="@dimen/dp_133"
+                    android:background="@mipmap/arrow_buttom" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_163"
+                    android:background="@color/cl_c2c0be" />
+
+                <!--  年龄  -->
+                <TextView
+                    style="@style/twoText"
+                    android:layout_marginTop="@dimen/dp_172"
+                    android:text="年龄" />
+
+                <EditText
+                    android:layout_width="@dimen/dp_297"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_165"
+                    android:background="@null"
+                    android:hint="36"
+                    android:textColorHint="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_200"
+                    android:background="@color/cl_c2c0be" />
+                <!--  教龄 -->
+                <TextView
+                    style="@style/twoText"
+                    android:layout_marginTop="@dimen/dp_209"
+                    android:text="教龄" />
+
+
+                <TextView
+                    style="@style/c2Text"
+                    android:layout_width="@dimen/dp_72"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_248"
+                    android:text="是否愿意线上教学" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_259"
+                    android:text="是"
+                    android:textColor="@color/cl_231304" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_335"
+                    android:layout_marginTop="@dimen/dp_257"
+                    android:background="@mipmap/arrow_buttom" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_287"
+                    android:background="@color/cl_c2c0be" />
+
+
+                <!--  个人IP -->
+                <TextView
+                    style="@style/c2Text"
+                    android:layout_width="@dimen/dp_72"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_296"
+                    android:text="是否愿意打造个人IP" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_307"
+                    android:text="是"
+                    android:textColor="@color/cl_231304" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_335"
+                    android:layout_marginTop="@dimen/dp_305"
+                    android:background="@mipmap/arrow_buttom" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_335"
+                    android:background="@color/cl_c2c0be" />
+
+
+                <!-- 期望薪资 -->
+                <TextView
+                    style="@style/c2Text"
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_344"
+                    android:text="期望薪资" />
+
+                <EditText
+                    android:layout_width="@dimen/dp_297"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_335"
+                    android:background="@null"
+                    android:hint="10000"
+                    android:textColorHint="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    style="@style/blackText"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_324"
+                    android:layout_marginTop="@dimen/dp_344"
+                    android:text="元/月" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="395dp"
+                    android:background="@color/cl_c2c0be" />
+
+
+                <TextView
+                    style="@style/c2Text"
+                    android:layout_width="@dimen/dp_343"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_marginTop="405dp"
+                    android:text="是否有个人课程希望在平台投放并跟我们进行商业合作？" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="460dp"
+                    android:text="是"
+                    android:textColor="@color/cl_231304"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_335"
+                    android:layout_marginTop="@dimen/dp_437"
+                    android:background="@mipmap/arrow_buttom" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="480dp"
+                    android:background="@color/cl_c2c0be" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/cl_c2c0be" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="联系信息"
+                    android:textColor="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_28"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_44"
+                    android:text="电话"
+                    android:textColor="@color/cl_c2c0be"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:layout_width="@dimen/dp_297"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:background="@null"
+                    android:hint="13800138000"
+                    android:textColorHint="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_72"
+                    android:background="@color/cl_c2c0be" />
+
+                <TextView
+
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_80"
+                    android:text="电话邮箱"
+                    android:textColor="@color/cl_c2c0be"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:layout_width="@dimen/dp_297"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_72"
+                    android:background="@null"
+                    android:hint="listen@dance.com"
+                    android:textColorHint="@color/cl_4d4c4b"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_279"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_96"
+                    android:layout_marginTop="@dimen/dp_109"
+                    android:background="@color/cl_c2c0be" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_26"
+                android:background="@color/cl_c2c0be" />
+
+            <TextView
+                style="@style/blackText"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="教学资质" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_109"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:background="@drawable/zhanweitu" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_109"
+                    android:layout_marginLeft="@dimen/dp_202"
+                    android:background="@drawable/zhanweitu" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_98"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_50"
+                    android:layout_marginTop="@dimen/dp_117"
+                    android:text="考级教师资格证"
+                    android:textColor="@color/cl_231304"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_249"
+                    android:layout_marginTop="@dimen/dp_117"
+                    android:text="毕业证书"
+                    android:textColor="@color/cl_231304"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    style="@style/c2Text"
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_155"
+                    android:text="考试机构"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    style="@style/c2Text"
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_192"
+                    android:text="考试等级"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    style="@style/c2Text"
+                    android:layout_width="@dimen/dp_72"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_229"
+                    android:text="教师资格证书编号"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@color/cl_c2c0be" />
+
+            <include layout="@layout/data_included_2" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

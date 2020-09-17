@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_343"
+        android:layout_height="@dimen/dp_144"
+      android:layout_margin="@dimen/dp_12"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/atonce_apply"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_247"
+            android:layout_marginTop="@dimen/dp_103"
+            android:background="@drawable/shape_submit"
+            android:gravity="center"
+            android:text="@string/Immediatelyapply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/rlv_teacher_couser_headimg"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_81"
+            android:src="@drawable/zhanweitun" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_1_5"
+            android:layout_marginLeft="@dimen/dp_131"
+            android:layout_marginTop="@dimen/dp_117"
+            android:background="@color/cl_c2c0be" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_167"
+            android:layout_marginTop="@dimen/dp_108"
+            android:src="@mipmap/wubi" />
+
+        <TextView
+            android:id="@+id/rlv_teacher_couser_courseTag"
+            android:layout_width="@dimen/dp_43"
+            android:layout_height="@dimen/dp_20"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="@dimen/sp_9"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:background="@drawable/shape_appraise"
+            android:text="芭蕾舞" />
+
+        <TextView
+            android:id="@+id/rlv_teacher_couser_courseName"
+            android:layout_width="@dimen/dp_172"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_40"
+            android:text="舒缓芭蕾 - 让芭蕾变得柔和"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_60"
+            android:text="今天20:00开课"
+            android:textColor="@color/cl_c2c0be"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:id="@+id/rlv_teacher_couser_username"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_43"
+            android:layout_marginTop="@dimen/dp_83"
+            android:text="李妍"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/rlv_teacher_couser_amount"
+            android:layout_width="@dimen/dp_63"
+            android:layout_height="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_111"
+            android:text="42568人已报名"
+            android:textColor="@color/cl_c2c0be"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:id="@+id/rlv_teacher_couser_price"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_131"
+            android:layout_marginTop="@dimen/dp_109"
+            android:text="9499"
+            android:textColor="@color/cl_c2c0be"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/wu_price"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_187"
+            android:layout_marginTop="@dimen/dp_103"
+            android:text="6499"
+            android:textColor="@color/cl_ffc400"
+            android:textSize="@dimen/sp_18" />
+    </RelativeLayout>
+</RelativeLayout>

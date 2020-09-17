@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.TestPage.TestFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/sign_one"
+        android:layout_width="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_height="@dimen/dp_44"
+        android:background="#F1F1F1">
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/singthree" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_three"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_62"
+        android:background="#F1F1F1">
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/singone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_four"
+        android:layout_width="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_117"
+        android:layout_height="@dimen/dp_44"
+        android:background="#F1F1F1">
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/singfour" />
+    </LinearLayout>
+</RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/test_xy_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_250"
+            android:background="@mipmap/zhongxie" />
+
+        <TextView
+            android:id="@+id/test_xy_name"
+            android:text="中国舞蹈家协会"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_width="@dimen/dp_126"
+            android:layout_height="@dimen/dp_25"/>
+        <TextView
+            android:text="China Dancers Association"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_75"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_41"/>
+
+        <Button
+            android:id="@+id/query_dance"
+            android:layout_width="@dimen/dp_108"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_267"
+            android:layout_marginTop="@dimen/dp_65"
+            android:background="@drawable/shape_next"
+            android:gravity="center"
+            android:text="@string/theatr"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_local"
+            android:layout_marginTop="@dimen/dp_150"
+            android:layout_height="@dimen/dp_50">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="中国舞"
+                android:textSize="@dimen/sp_24"
+                android:textColor="@color/cl_231304"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="@dimen/dp_72"
+                android:background="@color/cl_ff7b00"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_22"
+
+                android:layout_height="3dp"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/jiaxie_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_190"
+            android:background="@drawable/shape_top_round_white" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

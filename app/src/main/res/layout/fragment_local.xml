@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.LocalPage.LocalFragment">
+
+    <RelativeLayout
+        android:id="@+id/local_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_92"
+        android:background="@color/app_theme_color">
+
+        <TextView
+            android:id="@+id/tx_wd"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_33"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_164"
+            android:layout_marginTop="@dimen/dp_42"
+            android:text="同城"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_91"
+            android:layout_marginTop="@dimen/dp_46"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_search" />
+
+
+    </RelativeLayout>
+
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_local"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_below="@id/local_title"
+        app:xTabIndicatorColor="@color/app_theme_color"
+        app:xTabIndicatorHeight="@dimen/dp_4"
+        app:xTabIndicatorWidth="@dimen/dp_187"
+        app:xTabSelectedTextSize="@dimen/sp_18"
+        app:xTabTextColor="@color/black"
+        app:xTabTextSize="@dimen/sp_18" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_local"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_local" />
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_96"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/dp_343"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="@dimen/dp_8"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/tm_image"
+            android:layout_width="@dimen/dp_142"
+            android:layout_height="@dimen/dp_80"
+            android:src="@mipmap/beiwu"
+            android:padding="@dimen/dp_5"/>
+        <TextView
+            android:id="@+id/kc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程名称"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#000000"
+            android:layout_marginLeft="@dimen/dp_140"
+            android:layout_marginTop="@dimen/dp_8"/>
+
+        <ImageView
+            android:id="@+id/tx_image"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:src="@mipmap/beiwu"
+            android:layout_marginLeft="@dimen/dp_140"
+            android:layout_marginTop="@dimen/dp_45"/>
+
+
+            <TextView
+                android:id="@+id/xiangqing_couser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康明娜"
+                android:layout_marginLeft="@dimen/dp_165"
+                android:layout_marginTop="@dimen/dp_43"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

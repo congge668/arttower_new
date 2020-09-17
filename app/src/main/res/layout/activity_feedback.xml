@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.FeedbackActivity">
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="问题反馈" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="在进行浏览的时候发现相关的内容展示不够详细。在进行浏览的时候发现相关的内容展示不够详细。在进行浏览的时候发现相关的内容展示不够详细。"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14"
+        android:layout_height="@dimen/dp_150"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="@dimen/dp_72"
+    android:src="@mipmap/couserda"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_height="@dimen/dp_72"/>
+    </RelativeLayout>
+    
+    <Button
+        android:layout_width="@dimen/dp_300"
+        android:textSize="@dimen/sp_18"
+        android:gravity="center"
+        android:background="@drawable/shape_submit"
+        android:layout_marginTop="@dimen/dp_200"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:layout_height="@dimen/dp_40"/>
+</LinearLayout>

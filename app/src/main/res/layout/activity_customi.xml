@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CustomiActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/zfcg_relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+
+
+    <com.example.arttower.design.CommonTitle
+        android:id="@+id/zf_comm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/custion"
+        tools:ignore="MissingConstraints" />
+
+    
+    <ImageView
+        android:id="@+id/zfcg_cus"
+        android:layout_width="@dimen/dp_153"
+        android:layout_height="@dimen/dp_165"
+        android:src="@mipmap/success"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/zf_comm"
+        android:layout_marginTop="@dimen/dp_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付成功"
+        android:textSize="@dimen/sp_16"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/zfcg_cus"
+        android:layout_marginTop="@dimen/dp_16"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zfcg_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_184"
+        android:layout_below="@+id/zfcg_relat"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/dp_20">
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/zfcg_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginRight="@dimen/dp_32"
+        android:background="@drawable/shape_yuan"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:layout_below="@+id/zfcg_relativelayout"
+        android:layout_marginTop="@dimen/dp_90"/>
+
+</RelativeLayout>

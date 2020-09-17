@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zf_relativelayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PaymentActivity">
+    <com.example.arttower.design.CommonTitle
+        android:id="@+id/affirm_zf_comm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="@string/confirm"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/affirm_zf_relat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_114"
+        android:layout_below="@+id/affirm_zf_comm"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/affirm_zf_image"
+            android:layout_width="@dimen/dp_146"
+            android:layout_height="@dimen/dp_82"
+            android:src="@mipmap/coursebitmp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"/>
+
+        <TextView
+            android:id="@+id/affirm_zf_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="柔和芭蕾"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/affirm_zf_image"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <TextView
+            android:id="@+id/affirm_teacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李妍"
+            android:textSize="@dimen/sp_12"
+            android:layout_toRightOf="@+id/affirm_zf_image"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_60"/>
+
+        <ImageView
+            android:id="@+id/affirm_zf_wubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wubi"
+            android:layout_toLeftOf="@+id/affirm_zf_pric"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_296"
+            android:layout_marginTop="@dimen/dp_70"/>
+
+        <TextView
+            android:id="@+id/affirm_zf_pric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4699"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_68"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/affirm_zf_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_63"
+        android:layout_below="@+id/affirm_zf_relat"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wubi"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_14"
+            android:text="舞币支付"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_27"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_124"
+        android:layout_below="@+id/affirm_zf_relative"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款信息"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#000000"
+            android:layout_marginLeft="@dimen/dp_16"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程价格"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_25"/>
+        <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="优惠活动"
+              android:layout_marginLeft="@dimen/dp_16"
+              android:layout_marginTop="@dimen/dp_50"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付金额"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_80"/>
+
+
+        <TextView
+            android:id="@+id/affirm_fukuan_wubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4699"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_25"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舞币"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_25"/>
+        <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="-100.00"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="@dimen/dp_44"
+              android:layout_marginTop="@dimen/dp_50"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="舞币"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="@dimen/dp_16"
+              android:layout_marginTop="@dimen/dp_50"/>-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wubi"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_80"
+            android:layout_marginRight="@dimen/dp_50"/>
+
+        <TextView
+            android:id="@+id/affirm_practical_fukuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4599"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_78"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/affirm_zf_goumai"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_32"
+        android:background="@drawable/shape_yuan"
+        android:textColor="#ffffff"
+        android:text="立即支付"
+        android:textSize="@dimen/sp_18"/>
+</RelativeLayout>

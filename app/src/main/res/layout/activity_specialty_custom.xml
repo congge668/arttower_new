@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CoursePage.view.SpecialtyCustomActivity">
+
+    <LinearLayout
+        android:id="@+id/specialty_exam"
+        android:layout_width="@dimen/dp_343"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_229"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@drawable/zhuanye_beijing"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <CheckBox
+            android:id="@+id/kskj"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="考试考级"
+            android:textColor="@color/cl_231304"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_31"
+            android:layout_marginRight="@dimen/dp_31"
+            android:layout_marginTop="8dp"
+            android:text="涵盖考级五大家，专业性较强，建议考生选择"
+            android:textColor="@color/cl_c2c0be"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/specialty_interest"
+        android:layout_width="@dimen/dp_343"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="369dp"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@color/white">
+        <CheckBox
+            android:id="@+id/xqah"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_24"
+            android:gravity="center"
+            android:button="@null"
+            android:text="兴趣爱好"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_31"
+            android:layout_marginRight="@dimen/dp_31"
+            android:layout_marginTop="8dp"
+            android:text="适合大众，难度较低，建议舞蹈爱好者选择"
+            android:textColor="@color/cl_c2c0be"
+
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="@dimen/dp_33"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_96"
+        android:text="@string/learninggoal"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_24" />
+
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="@string/specialtyCustom"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/specialty_next"
+        android:layout_width="@dimen/dp_311"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_570"
+        android:background="@drawable/shape_submit"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+</RelativeLayout>

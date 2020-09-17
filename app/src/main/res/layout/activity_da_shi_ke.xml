@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/realaty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.CoursePage.view.DaShiKeActivity">
+
+    <com.example.arttower.design.CommonTitle
+        android:id="@+id/common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="@string/dashicourse"
+        tools:ignore="MissingConstraints" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tx_dashi"
+            android:layout_width="@dimen/dp_84"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:src="@mipmap/spinning_ballerina" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toRightOf="@+id/tx_dashi"
+            android:text="康明娜"
+            android:textColor="#000000"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_70"
+            android:layout_toRightOf="@+id/tx_dashi"
+            android:text="培养学员数十万" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_45"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@drawable/zhankai" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/kc_tx"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@mipmap/spinning_ballerina" />
+
+        <TextView
+            android:id="@+id/kc_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toRightOf="@+id/kc_tx"
+            android:text="古典舞水墨丹青"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_55"
+            android:layout_toRightOf="@+id/kc_tx"
+            android:src="@mipmap/wubi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_53"
+
+            android:text="199"
+            android:textColor="#FF7B00"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/kc_shoopp"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_toRightOf="@+id/kc_desc"
+            android:background="@drawable/shape_yuan"
+            android:text="立即购买"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_12" />
+
+
+        <ImageView
+            android:id="@+id/kc_tx1"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toRightOf="@+id/kc_shoopp"
+            android:src="@mipmap/spinning_ballerina" />
+
+        <TextView
+            android:id="@+id/kc_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toRightOf="@+id/kc_tx1"
+            android:text="古典舞水墨丹青"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_55"
+            android:layout_toRightOf="@+id/kc_tx1"
+            android:src="@mipmap/wubi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_52"
+            android:layout_toRightOf="@+id/wubi1"
+            android:text="199"
+            android:textColor="#FF7B00"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_toRightOf="@+id/kc_desc1"
+            android:background="@drawable/shape_yuan"
+            android:text="立即购买"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_12" />
+
+
+
+
+        <ImageView
+            android:id="@+id/kc_tx2"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_100"
+            android:src="@mipmap/spinning_ballerina" />
+
+        <TextView
+            android:id="@+id/kc_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_toRightOf="@+id/kc_tx"
+            android:text="古典舞水墨丹青"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/wubi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_135"
+            android:layout_toRightOf="@+id/kc_tx"
+            android:src="@mipmap/wubi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_133"
+
+            android:text="199"
+            android:textColor="#FF7B00"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/kc_shoopp1"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_115"
+            android:layout_toRightOf="@+id/kc_desc"
+            android:background="@drawable/shape_yuan"
+            android:text="立即购买"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_12" />
+
+
+
+      
+
+    </RelativeLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+</LinearLayout>

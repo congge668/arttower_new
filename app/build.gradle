@@ -1,0 +1,164 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.example.arttower"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+
+        //避免重复so导入，加上这写代码
+        pickFirst 'lib/armeabi-v7a/libalivcffmpeg.so'
+        pickFirst 'lib/arm64-v8a/libalivcffmpeg.so'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$supportVsersion"
+    implementation "com.android.support:cardview-v7:$supportVsersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraint"
+    implementation "com.android.support:support-v4:$supportVsersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "com.android.support:design:$supportVsersion"
+    implementation "com.android.support:support-v4:$supportVsersion"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2"
+    implementation "com.squareup.retrofit2:converter-jackson:$retrofit2"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxjava2"
+    //noinspection GradleDependency
+    implementation "com.jakewharton:butterknife:$butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife"
+    implementation "com.flyco.tablayout:FlycoTabLayout_Lib:$tablayout"
+    //implementation "com.github.bumptech.glide:glide:$glide"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3"
+    implementation "com.squareup.okhttp3:logging-interceptor:$ok3log"
+    implementation "fm.jiecao:jiecaovideoplayer:$jiecao"
+    implementation 'com.hjq:xxpermissions:5.2'
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakCanary"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$leakCanary"
+    implementation "com.scwang.smartrefresh:SmartRefreshLayout:$smartRefresh"
+
+    //    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+
+    //没有使用特殊Header，可以不加这行
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    //implementation "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar"
+
+    implementation "com.scwang.smartrefresh:SmartRefreshHeader:$smartRefresh"
+    implementation files('libs/fastjson-1.2.41.jar')
+
+    //粘性头部/悬浮头部
+    implementation 'com.github.qdxxxx:StickyHeaderDecoration:1.0.1'
+
+    //banner
+    implementation 'com.youth.banner:banner:2.0.10'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'org.jsoup:jsoup:1.10.2'
+
+    //    implementation 'com.android.support:multidex:1.0.1'
+
+    //MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+    // implementation(name: 'LiteAVSDK_Player_7.2.8927', ext: 'aar')
+    //implementation(name: 'libsuperplayer', ext: 'aar')
+
+    // 超级播放器弹幕集成的第三方库
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+
+    //viewpage
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'com.github.zaaach:TransformersLayout:1.0.5'
+
+    //StatusBarUtil
+    implementation 'com.jaeger.statusbarutil:library:1.4.0'
+
+    //androidx
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+
+    //Xtablayout
+    implementation 'com.androidkun:XTabLayout:1.1.4'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation files('libs/accs_sdk_taobao-3.3.8.8-open-fix2.jar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(name: 'umeng-asms-armeabi-v1.1.3', ext: 'aar')
+    implementation(name: 'umeng-crash-armeabi-v0.0.4', ext: 'aar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/pushservice-7.0.0.27.jar')
+    //阿里云播放器
+    implementation(name: 'AliyunPlayer-5.1.5-full', ext: 'aar')
+    //implementation 'com.aliyun.sdk.android:AliyunPlayer:4.5.0-full'
+    implementation 'com.alivc.conan:AlivcConan:1.0.3'
+
+    implementation 'com.aliyun.video.android:svideopro:3.16.0'//短视频专业版SDK必须依赖
+    //implementation 'com.aliyun.video.android:core:1.2.2' //核心库必须依赖
+    //implementation 'com.alivc.conan:AlivcConan:1.0.3'//核心库必须依赖
+    implementation 'com.aliyun.video.android:AlivcFFmpeg:2.0.0'//必须依赖
+    implementation 'com.aliyun.video.android:upload:1.6.0'// 上传库,如不需要上传可不依赖
+
+    // 微信sdk
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //immersionbar
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0-beta05'
+
+    //lottie
+    implementation 'com.airbnb.android:lottie:2.8.0'
+    implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
+    //android与js交互
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    //支付宝支付
+    implementation(name: 'alipaySdk-15.5.9-20181123210601', ext: 'aar')
+}

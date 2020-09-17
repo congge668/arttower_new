@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LocalPage.view.TeacherDataActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/cl_c2c0be"
+    android:layout_height="@dimen/dp_210">
+    
+    <Button
+        android:id="@+id/teacger_guanzhu"
+        android:layout_width="@dimen/dp_64"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_submit"
+        android:text="关注"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_height="@dimen/sp_24"/>
+    
+<ImageView
+    android:id="@+id/return_left"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:src="@mipmap/returnleft"
+    android:layout_width="@dimen/dp_24"
+    android:layout_height="@dimen/dp_24"/>
+    <ImageView
+        android:id="@+id/bitmap_teacher"
+        android:layout_marginLeft="@dimen/dp_80"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/renwu"
+        android:scaleType="fitCenter"
+        android:layout_width="@dimen/dp_95"
+        android:layout_height="@dimen/dp_156"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_24"
+        android:src="@mipmap/fenxiang"
+        android:layout_height="@dimen/dp_24"/>
+    
+    <TextView
+        android:id="@+id/data_name"
+        android:layout_width="wrap_content"
+        android:text="李妍"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp_300"
+        android:layout_marginTop="@dimen/dp_90"
+        android:layout_height="@dimen/dp_20"/>
+    <TextView
+        android:id="@+id/data_academy"
+        android:layout_width="@dimen/dp_84"
+        android:text="北京舞蹈学院"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp_210"
+        android:layout_marginTop="@dimen/dp_113"
+        android:layout_height="@dimen/dp_20"/>
+
+    <TextView
+        android:id="@+id/data_degree"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_300"
+        android:layout_marginTop="@dimen/dp_113"
+        android:text="博士"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <com.example.arttower.design.StarBar
+        android:id="@+id/data_teacher_star"
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_243"
+        android:layout_marginTop="@dimen/dp_147"
+        app:starCount="5"
+        app:starDistance="@dimen/dp_4"
+        app:starEmpty="@mipmap/start_off"
+        app:starFill="@mipmap/start_on"
+        app:starSize="@dimen/dp_16" />
+    
+
+</RelativeLayout>
+
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_teacher"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_171"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/shape_collection"
+        app:xTabIndicatorColor="@color/app_theme_color"
+        app:xTabIndicatorHeight="@dimen/dp_4"
+        app:xTabIndicatorWidth="@dimen/dp_187"
+        app:xTabSelectedTextSize="@dimen/sp_18"
+        app:xTabTextColor="@color/black"
+        app:xTabTextSize="@dimen/sp_18" />
+
+<FrameLayout
+    android:id="@+id/teacher_frame"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/tab_teacher"
+    android:layout_height="match_parent"/>
+</RelativeLayout>

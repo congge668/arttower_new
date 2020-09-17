@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cl_f2f2f2"
+    tools:context=".fragment.LocalPage.Teacher.OverseasTeacherFragment">
+
+
+<ImageView
+    android:layout_width="@dimen/dp_137"
+    android:background="@mipmap/inland_construction"
+    android:layout_marginTop="@dimen/dp_225"
+    android:layout_marginLeft="@dimen/dp_119"
+    android:layout_height="@dimen/dp_138"/>
+<TextView
+    android:layout_width="@dimen/dp_138"
+    android:text="功能正在开发，再等等吧~"
+    android:textSize="@dimen/sp_12"
+    android:layout_marginLeft="@dimen/dp_119"
+    android:layout_marginTop="@dimen/dp_24"
+    android:textColor="@color/cl_c2c0be"
+    android:layout_height="@dimen/dp_17"/>
+</LinearLayout>

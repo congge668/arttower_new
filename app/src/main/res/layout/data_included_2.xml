@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--  教学经历 -->
+    <TextView
+        style="@style/blackText"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="教学经历" />
+
+    <TextView
+        style="@style/twoText"
+        android:layout_marginTop="@dimen/dp_44"
+        android:text="时间" />
+
+    <TextView
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_102"
+        android:layout_marginTop="@dimen/dp_44"
+        android:text="2014年6月"
+        android:textColor="@color/cl_4d4c4b"
+        android:textSize="@dimen/sp_14" />
+    <ImageView
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_96"
+        android:layout_marginTop="@dimen/dp_72"
+        android:background="@color/cl_c2c0be" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_176"
+        android:layout_marginTop="@dimen/dp_42"
+        android:background="@mipmap/arrow_buttom" />
+
+    <TextView
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_210"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/cl_c2c0be"
+        android:layout_marginTop="@dimen/dp_44"
+        android:text="至" />
+
+    <TextView
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_240"
+        android:layout_marginTop="@dimen/dp_44"
+        android:text="至今"
+        android:textColor="@color/cl_4d4c4b"
+        android:textSize="@dimen/sp_14" />
+    <ImageView
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_234"
+        android:layout_marginTop="@dimen/dp_72"
+        android:background="@color/cl_c2c0be" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_314"
+        android:layout_marginTop="@dimen/dp_42"
+        android:background="@mipmap/arrow_buttom" />
+
+    <TextView
+        style="@style/twoText"
+        android:layout_marginTop="@dimen/dp_80"
+        android:text="内容" />
+
+    <EditText
+        android:layout_width="@dimen/dp_297"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_96"
+        android:layout_marginTop="@dimen/dp_75"
+        android:background="@null"
+        android:hint="b北京舞蹈学院主讲教师"
+        android:textColorHint="@color/cl_4d4c4b"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_277"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_98"
+        android:layout_marginTop="@dimen/dp_108"
+        android:background="@color/cl_c2c0be" />
+
+    <!-- 教学成就 -->
+    <TextView
+        style="@style/blackText"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_157"
+        android:text="教学成就" />
+    <ImageView
+        android:layout_width="@dimen/dp_277"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_98"
+        android:layout_marginTop="@dimen/dp_185"
+        android:background="@color/cl_c2c0be" />
+
+    <!-- 个人特色 -->
+    <TextView
+        style="@style/blackText"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_234"
+        android:text="个人特色" />
+</RelativeLayout>

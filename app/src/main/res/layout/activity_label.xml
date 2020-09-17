@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LabelActivity">
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="添加标签" />
+    <TextView
+        android:id="@+id/label_fish"
+        android:layout_width="@dimen/dp_28"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/sp_16"
+        android:layout_height="@dimen/dp_20"/>
+
+    <EditText
+        android:id="@+id/label_ed_sousuo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_70"
+        android:background="@drawable/shape_dongtai"
+        android:hint="                                               搜索"
+        android:layout_height="@dimen/dp_42"/>
+    <ImageView
+        android:id="@+id/label_img_sousuo"
+        android:layout_width="@dimen/dp_24"
+        android:src="@drawable/sousuo"
+        android:layout_marginTop="@dimen/dp_78"
+        android:layout_marginLeft="@dimen/dp_150"
+        android:layout_height="@dimen/dp_24"/>
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/tuijianshiyong"
+        android:layout_width="@dimen/dp_64"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/cl_ff7b00"
+        android:text="最近使用"
+        android:layout_marginTop="@dimen/dp_134"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_height="@dimen/dp_22"/>
+<ImageView
+    android:layout_width="@dimen/dp_4"
+    android:background="@drawable/shape_submit"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_136"
+    android:layout_height="@dimen/dp_16"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tuijianshiyong"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/label_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_200"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="@dimen/dp_64"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/cl_ff7b00"
+            android:text="推荐标签"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_height="@dimen/dp_22"/>
+        <ImageView
+            android:layout_width="@dimen/dp_4"
+            android:background="@drawable/shape_submit"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_height="@dimen/dp_16"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/label_tuijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/share_pop_friend"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_45"
+        android:src="@mipmap/share_pengyouquan" />
+
+    <ImageView
+        android:id="@+id/share_pop_wx"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_122"
+        android:layout_marginTop="@dimen/dp_45"
+        android:src="@mipmap/share_wx" />
+
+    <ImageView
+        android:id="@+id/share_pop_qq"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_205"
+        android:layout_marginTop="@dimen/dp_45"
+        android:src="@mipmap/qq" />
+
+    <ImageView
+        android:id="@+id/share_pop_link"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_287"
+        android:layout_marginTop="@dimen/dp_45"
+        android:src="@mipmap/share_lianjie" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_145"
+        android:background="@color/cl_f2f2f2" />
+
+    <TextView
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="分享此内容"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_104"
+        android:text="朋友圈"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_134"
+        android:layout_marginTop="@dimen/dp_104"
+        android:text="微信"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_220"
+        android:layout_marginTop="@dimen/dp_104"
+        android:text="QQ"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_287"
+        android:layout_marginTop="@dimen/dp_104"
+        android:text="链接分享"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_12" />
+<Button
+    android:id="@+id/cancel_share"
+    android:layout_width="match_parent"
+    android:text="取消"
+    android:textSize="@dimen/sp_16"
+    android:background="@null"
+    android:layout_marginTop="@dimen/dp_145"
+    android:layout_height="@dimen/dp_50"/>
+
+</RelativeLayout>

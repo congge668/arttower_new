@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/one_seek_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/shape_collection"
+        app:xTabIndicatorColor="@color/app_theme_color"
+        app:xTabIndicatorHeight="@dimen/dp_4"
+        app:xTabIndicatorWidth="@dimen/dp_187"
+        app:xTabSelectedTextSize="@dimen/sp_18"
+        app:xTabTextColor="@color/black"
+        app:xTabTextSize="@dimen/sp_18" />
+    <FrameLayout
+        android:id="@+id/one_seek_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

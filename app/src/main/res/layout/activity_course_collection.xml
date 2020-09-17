@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f4f4f4"
+    android:orientation="vertical"
+    tools:context=".activity.CourseCollectionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_210">
+
+        <ImageView
+            android:id="@+id/bg_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/kechenghejizhanweitu" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/hei_project" />
+
+        <ImageView
+            android:id="@+id/back_course"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/course_collection_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_33"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_33"
+            android:text="合集名称"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
+
+        <TextView
+            android:id="@+id/course_collection_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:alpha="0.3"
+            android:text="23333人正在学"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:gravity="center"
+        android:text="合集介绍"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/course_collection_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_2"
+        android:text="本合集进行了为期4周的效果测试，一共183人参加。4周后首推成功率高达69.7%，平均每人瘦了2.19cm，相当于牛仔裤小了2个码，效果显著。如果配合减脂训练、饮食控制，还能让瘦腿效果更明显。"
+        android:textColor="@color/cl_4d4c4b"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_24"
+        android:text="课程列表"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_xq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_8" />
+</LinearLayout>

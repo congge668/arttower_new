@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TeacherActivity">
+
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="教师认证"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_72"
+        android:text="认证步骤"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_18"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_marginLeft="@dimen/dp_156"
+        android:layout_marginTop="@dimen/dp_121"
+        android:background="@mipmap/data" />
+
+    <TextView
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_160"
+        android:layout_marginTop="@dimen/dp_193"
+        android:text="基本信息"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_marginLeft="@dimen/dp_156"
+        android:layout_marginTop="@dimen/dp_265"
+        android:background="@mipmap/upteacher" />
+
+    <TextView
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_160"
+        android:layout_marginTop="@dimen/dp_337"
+        android:text="上传资料"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_160"
+        android:layout_marginTop="481dp"
+        android:text="等待审核"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14" />
+
+
+    <Button
+        android:id="@+id/teacher_Authentication"
+        android:layout_width="@dimen/dp_298"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="570dp"
+        android:background="@drawable/shape_submit"
+        android:gravity="center"
+        android:text="@string/startcode"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_marginLeft="@dimen/dp_156"
+        android:layout_marginTop="409dp"
+        android:background="@mipmap/success" />
+
+
+    <TextView
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginLeft="@dimen/dp_156"
+        android:layout_marginTop="@dimen/dp_213"
+        android:text="    毕业证书
+           考级资格证书"
+        android:textColor="@color/cl_ff7b00"
+        android:textSize="@dimen/sp_10" />
+
+    <TextView
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginLeft="@dimen/dp_156"
+        android:layout_marginTop="@dimen/dp_357"
+        android:text="    毕业证书
+           考级资格证书"
+        android:textColor="@color/cl_ff7b00"
+        android:textSize="@dimen/sp_10" />
+
+</RelativeLayout>

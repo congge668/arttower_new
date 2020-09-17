@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_180"
+    android:background="@color/cl_f2f2f2"
+    android:layout_height="@dimen/dp_180">
+<ImageView
+    android:layout_width="@dimen/dp_109"
+    android:background="@mipmap/chongzhisucceed"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="@dimen/dp_39"
+    android:layout_height="@dimen/dp_102"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_64"
+        android:textColor="@color/bottom_text_selected"
+        android:textSize="@dimen/sp_16"
+        android:text="发布成功"
+        android:layout_marginLeft="@dimen/dp_58"
+        android:layout_marginTop="@dimen/dp_138"
+        android:layout_height="@dimen/dp_22"/>
+</RelativeLayout>

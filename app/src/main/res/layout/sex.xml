@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_collection"
+    android:layout_height="@dimen/dp_213"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="@dimen/dp_48"
+        android:textColor="@color/cl_c2c0be"
+        android:textSize="@dimen/sp_12"
+        android:text="修改性别"
+        android:layout_marginLeft="@dimen/dp_160"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_height="@dimen/dp_17"/>
+    <LinearLayout
+
+        android:id="@+id/alter_boy"
+        android:layout_width="@dimen/dp_72"
+        android:background="@drawable/shape_blue"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_65"
+        android:layout_height="@dimen/dp_72">
+        <ImageView
+            android:layout_width="@dimen/dp_36"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:src="@mipmap/boy"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/dp_36"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alter_girl"
+        android:layout_width="@dimen/dp_72"
+        android:background="@drawable/shape_pink"
+        android:layout_marginLeft="@dimen/dp_152"
+        android:layout_marginTop="@dimen/dp_65"
+        android:layout_height="@dimen/dp_72">
+        <ImageView
+            android:layout_width="@dimen/dp_36"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:src="@mipmap/girl"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/dp_36"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alter_sex"
+        android:layout_width="@dimen/dp_72"
+        android:background="@drawable/shape_green"
+        android:layout_marginLeft="@dimen/dp_256"
+        android:layout_marginTop="@dimen/dp_65"
+        android:layout_height="@dimen/dp_72">
+        <ImageView
+            android:layout_width="@dimen/dp_36"
+            android:src="@mipmap/secrecy"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/dp_36"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="@dimen/dp_14"
+        android:textSize="@dimen/sp_14"
+        android:text="男"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_marginTop="@dimen/dp_141"
+        android:layout_marginLeft="@dimen/dp_78"
+        android:layout_height="@dimen/dp_20"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_14"
+        android:text="女"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_marginTop="@dimen/dp_141"
+        android:layout_marginLeft="@dimen/dp_181"
+        android:layout_height="@dimen/dp_20"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_28"
+        android:text="保密"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_marginTop="@dimen/dp_141"
+        android:layout_marginLeft="@dimen/dp_278"
+        android:layout_height="@dimen/dp_20"/>
+</RelativeLayout>

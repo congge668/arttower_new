@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/money_onehundred"
+        android:layout_width="@dimen/dp_343"
+        android:layout_height="@dimen/dp_44"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/back">
+
+        <TextView
+            android:id="@+id/yibai_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_22"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:text="100"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_17"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="舞币"
+            android:textColor="@color/cl_4d4c4b"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/shi_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_210"
+            android:text="￥10.00"
+            android:textColor="@color/cl_4d4c4b"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+</RelativeLayout>

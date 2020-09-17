@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/shipin_img"
+        android:background="@drawable/zhanweitu"
+        android:layout_width="@dimen/dp_163"
+        android:layout_height="@dimen/dp_217"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16" />
+    <TextView
+        android:id="@+id/shipin_count"
+        android:layout_width="@dimen/dp_163"
+        android:layout_alignBottom="@id/shipin_img"
+        android:layout_alignRight="@id/shipin_img"
+        android:text="#桃李芬芳 舞蹈大赛视频，大家快来看呀~~~"
+        android:maxLength="25"
+        android:textSize="@dimen/sp_9"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/shipin_dianzna"
+        android:layout_width="16dp"
+        android:background="@mipmap/dianzanshou"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_alignBottom="@id/shipin_img"
+        android:layout_alignRight="@id/shipin_img"
+        android:layout_height="16dp"/>
+    <TextView
+        android:id="@+id/shipin_dianzan_num"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/dp_5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_9"
+        android:text="3.6w"
+        android:layout_alignBottom="@id/shipin_img"
+        android:layout_alignRight="@id/shipin_img"
+        android:layout_height="16dp"/>
+    
+</RelativeLayout>

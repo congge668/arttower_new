@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f4f4f4"
+    android:orientation="vertical"
+    tools:context=".activity.MySecurityPrivacyActivity">
+
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="安全隐私"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_84"
+        android:background="@color/white">
+        <!-- 手机号 -->
+        <TextView
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_51"
+            android:text="手机号"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/alter_te_phone"
+            android:layout_width="@dimen/dp_134"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_201"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_52"
+            android:text="+86 138****8000"
+            android:textColor="@color/cl_707070"
+            android:textSize="@dimen/sp_15" />
+
+        <ImageView
+            android:id="@+id/security_phone"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+
+
+        <TextView
+            android:layout_width="@dimen/dp_359"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_41"
+            android:layout_marginBottom="@dimen/dp_42"
+            android:background="@color/cl_f2f2f2" />
+        <!-- 微信账号 -->
+        <TextView
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_9"
+            android:text="微信账号"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18" />
+
+
+        <TextView
+            android:layout_width="@dimen/dp_83"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_252"
+            android:layout_marginTop="@dimen/dp_52"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="wxid_e8gst"
+            android:textColor="@color/cl_707070"
+            android:textSize="@dimen/sp_15" />
+
+        <ImageView
+            android:id="@+id/security_wx"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_51"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/alter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/white">
+        <!--修改密码-->
+        <TextView
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_27"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="修改密码"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_232"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@mipmap/ic_jiantou_right" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/security_pay_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+          <!--修改支付密码-->
+         <TextView
+             android:layout_width="@dimen/dp_109"
+             android:layout_height="@dimen/dp_25"
+             android:layout_marginTop="@dimen/dp_8"
+             android:layout_marginLeft="@dimen/dp_16"
+             android:text="修改支付密码"
+             android:textColor="@color/cl_231304"
+             android:textSize="@dimen/sp_18" />
+
+         <ImageView
+
+             android:layout_width="@dimen/dp_24"
+             android:layout_marginTop="@dimen/dp_8"
+             android:layout_height="@dimen/dp_24"
+             android:layout_marginLeft="@dimen/dp_195"
+             android:src="@mipmap/ic_jiantou_right" />
+
+    </LinearLayout>
+
+</LinearLayout>

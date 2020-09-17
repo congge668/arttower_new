@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.arttower">
+
+    <application
+        android:name=".Frame.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/tingwu"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoAppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.CurriCulumActivity"/>
+        <activity android:name=".activity.SearchActivity"/>
+        <activity android:name=".activity.ChongZhiWuBiActivity"></activity>
+        <activity android:name=".activity.CustomiActivity"></activity>
+        <activity android:name=".activity.MoneyChongActivity" />
+        <activity android:name=".activity.PaypasswordOneActivity" />
+        <activity android:name=".activity.AlterPayPasswordActivity" />
+        <activity android:name=".activity.MyDynamicActivity" />
+        <activity android:name=".fragment.TestPage.view.Test_shipin_Activity" />
+        <activity android:name=".activity.PostureActivity" /> <!-- Activity类 -->
+        <activity android:name=".fragment.LocalPage.view.viewActivity" />
+        <activity android:name=".fragment.MinePage.view.AlterPasswordActivity" />
+        <activity android:name=".activity.AlterSucceedActivity" />
+        <activity android:name=".activity.AlterPhoneActivity" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.MyTransmitActivity" />
+        <activity android:name=".fragment.LocalPage.view.WriteAppriaseActivity" />
+        <activity android:name=".activity.LabelActivity" />
+        <activity android:name=".fragment.MinePage.view.MineFansActivity" />
+        <activity android:name=".activity.ItCollectionActivity" />
+        <activity android:name=".activity.AuditionCouserActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            />
+        <activity android:name=".activity.PaymentActivity"/>
+        <activity android:name=".fragment.MinePage.view.AlterRSAActivity" />
+        <activity android:name=".fragment.MinePage.view.AlterNameActivity" />
+        <activity android:name=".fragment.LocalPage.view.UpTeacherQuizActivity" />
+        <activity android:name=".fragment.TestPage.view.TestDataActivity" />
+        <activity android:name=".fragment.TestPage.view.OrganizationActivity" />
+        <activity android:name=".fragment.CoursePage.view.SpecialtyCustomActivity" />
+        <activity android:name=".activity.DataIncludedActivity" />
+        <activity android:name=".activity.TeacherActivity" />
+        <activity android:name=".activity.ModifyPhoneActivity" />
+        <activity android:name=".activity.MySecurityPrivacyActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.OrderformActivity" />
+        <activity android:name=".activity.WdInformActivity" />
+        <activity android:name=".activity.CourseCollectionActivity" />
+        <activity android:name=".activity.BindPhoneActivity" />
+        <activity android:name=".activity.TafriendActivity" />
+        <activity android:name=".activity.OtherpageActivity" />
+        <activity android:name=".activity.SetPsdActivity" />
+        <activity android:name=".activity.PsdLoginActivity" />
+        <activity android:name=".activity.FindPsdAcitivity" />
+        <activity android:name=".activity.MineSetActivity" />
+        <activity android:name=".activity.MineCollectionActivity" />
+        <activity android:name=".activity.MineHistoryActivity" />
+        <activity android:name=".activity.ForgetPsdActivity" />
+        <activity android:name=".activity.TaFensiActivity" />
+        <activity android:name=".activity.MineAttentionActivity" />
+        <activity android:name=".fragment.LocalPage.view.TeacherDataActivity" />
+        <activity android:name=".fragment.CoursePage.view.ClasslibraryActivity" />
+        <activity android:name=".fragment.CoursePage.view.HouDongKeActivity" />
+        <activity android:name=".fragment.CoursePage.view.DaShiKeActivity" />
+        <activity android:name=".activity.BuyCourseActivity" />
+        <activity android:name=".activity.MainZhanghuActivity" />
+        <activity
+            android:name=".activity.StarUpActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoAppTheme"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoAppTheme"
+            tools:ignore="LockedOrientationActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="101883897" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 友盟 start -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 微信登录 -->
+        <!--
+  <activity android:name=".wxapi.WXEntryActivity"
+            android:exported="true">
+        </activity>
+        -->
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" /> <!-- 微信 -->
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="uSOKeP4AV6bys4ZT00WGKUcv9irt4zFh" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.arttower.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="YourPackageName.bdpush"
+            android:exported="true"
+            android:process=":bdservice_v1"
+            android:protectionLevel="signature"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.YourPackageName" /> <!-- 友盟end -->
+        <!-- 百度地图start -->
+        <receiver android:name=".push.MyPushMessageReceiver">
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind、setTags等method的返回结果 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <!-- 接收通知点击事件，和通知自定义内容 -->
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+
+                <!-- 使用华为代理功能必须声明,用于接收华为的透传 -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <!-- 以下六项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver> <!-- 百度地图end -->
+        <!-- 百度push start -->
+        <!-- 此处Receiver名字修改为当前包名路径 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+            </intent-filter>
+        </receiver> <!-- push必须的组件声明 -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <!--<service
+            android:name=".Frame.MyIntentService"
+            tools:ignore="Instantiatable" />  Push服务接收客户端发送的各种请求 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service> <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" /> <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名 -->
+        <service
+            android:name="com.baidu.android.pushservice.job.PushJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":bdservice_v1" /> <!-- 可选声明, 提升push消息送达率 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.example.arttower"
+        android:protectionLevel="signature" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" /> <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CLEAR_APP_DATA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.example.arttower" />
+
+</manifest>

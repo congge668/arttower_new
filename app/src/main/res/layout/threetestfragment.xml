@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/kong_img"
+        android:layout_width="@dimen/dp_254"
+        android:layout_marginTop="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_height="@dimen/dp_198"/>
+    <TextView
+        android:id="@+id/kong_text"
+        android:layout_width="@dimen/dp_254"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_below="@+id/kong_img"
+        android:textColor="@color/cl_231304"
+        android:layout_height="@dimen/dp_20"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/three_test_rlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

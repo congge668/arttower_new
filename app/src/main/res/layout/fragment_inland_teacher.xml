@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f2f2f2"
+    android:orientation="vertical"
+    tools:context=".fragment.LocalPage.LocalFragment">
+    <RelativeLayout
+        android:id="@+id/local_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_92"
+        android:background="@color/app_theme_color">
+
+        <TextView
+            android:id="@+id/tx_wd"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_33"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_164"
+            android:layout_marginTop="@dimen/dp_42"
+            android:text="同城"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_91"
+            android:layout_marginTop="@dimen/dp_46"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_search" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/l_local"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/tab_local"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:text="智能排序"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/img_paixu"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:src="@mipmap/select_kuang"
+            />
+
+        <TextView
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_33"
+            android:text="附近"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/img_fujin"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:clickable="false"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:background="@drawable/select_one"
+            />
+
+        <TextView
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_33"
+            android:text="人气"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/img_renqi"
+            android:layout_width="@dimen/dp_18"
+            android:src="@mipmap/unselect_kuang"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_7"
+            />
+
+        <TextView
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_33"
+            android:text="筛选"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/img_shaixuan"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:src="@mipmap/ic_shaixuan" />
+
+    </LinearLayout>
+    
+    <com.youth.banner.Banner
+        android:id="@+id/inland_banner"
+        android:layout_width="match_parent"
+        android:background="@mipmap/teacherbanner"
+        android:layout_height="@dimen/dp_140" />
+
+
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/sma_rlv"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inland_rlv"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

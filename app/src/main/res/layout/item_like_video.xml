@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_176"
+    android:background="@color/white">
+
+    <com.example.arttower.design.RoundOrCircleImage
+        android:id="@+id/replyme_head"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:src="@mipmap/kechenghejizhanweitu" />
+
+    <TextView
+        android:id="@+id/likeimg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_toRightOf="@id/replyme_head"
+        android:text="长安与君识"
+        android:textColor="@color/cl_4d4c4b" />
+
+    <TextView
+        android:id="@+id/likeimg_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_toRightOf="@id/likeimg_name"
+        android:text="等233人赞了你的动态"
+        android:textColor="@color/cl_c2c0be" />
+
+    <TextView
+        android:id="@+id/likeimg_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_14"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="刚刚"
+        android:textColor="@color/cl_c2c0be"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_263"
+        android:layout_height="@dimen/dp_118"
+        android:layout_below="@id/likeimg_name"
+        android:layout_marginLeft="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/cl_f8f8f8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_8"
+            android:text="这几句话使这朵花儿感到真舒服；这几句话简直就像温暖的阳光。"
+            android:textColor="@color/cl_4d4c4b"
+            android:textSize="@dimen/sp_10" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_72"
+            android:layout_marginLeft="@dimen/dp_8">
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_130"
+                android:layout_height="@dimen/dp_72"
+                android:layout_marginTop="@dimen/dp_4"
+                android:src="@mipmap/like_video" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_130"
+                android:layout_height="@dimen/dp_72"
+                android:layout_marginTop="@dimen/dp_4"
+                android:src="@mipmap/hei"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/video_start" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_f8f8f8" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MinePage.view.AlterNameActivity">
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="修改昵称" />
+
+    <EditText
+        android:id="@+id/alter_ed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/shape_login_edit"
+        android:hint="困"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_80"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:paddingLeft="@dimen/dp_15"
+        android:textColor="@color/black"
+        android:textColorHint="#E4E1DE"
+        />
+    <ImageView
+        android:layout_width="@dimen/dp_24"
+        android:src="@drawable/erro"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_height="@dimen/dp_24"/>
+    <TextView
+        android:layout_width="@dimen/dp_174"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_120"
+        android:text="好听的名字可以收获更多朋友哦~"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/cl_c2c0be"
+        android:layout_height="@dimen/dp_17"/>
+
+    <Button
+        android:id="@+id/save_alter_baocun"
+        android:layout_width="@dimen/dp_298"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:background="@drawable/shape_submit"
+        android:gravity="center"
+        android:text="保存"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:textSize="@dimen/sp_18" />
+
+</RelativeLayout>

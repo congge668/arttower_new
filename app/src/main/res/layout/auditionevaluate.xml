@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_360">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/audition_evaluate_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/audition_evaluate_te"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/shape_login_edit"
+            android:hint="输入评论内容。。。"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cl_e4e1de"
+            android:textCursorDrawable="@drawable/test_cursor"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/audition_evaluate_false"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_margin="@dimen/dp_15"
+            android:src="@drawable/upfalse" />
+
+        <ImageView
+            android:id="@+id/audition_evaluate_data"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_15"
+            android:src="@drawable/updata" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

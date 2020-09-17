@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/xrite_appraise"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_270"
+            android:src="@mipmap/xiepingjia"
+            android:layout_marginTop="@dimen/dp_6" />
+
+        <TextView
+            android:id="@+id/appraise_xie_pingjia"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="写评价"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teacher_apprise_rlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

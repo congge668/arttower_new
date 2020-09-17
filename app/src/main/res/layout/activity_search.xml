@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragment.CoursePage.view.tabfragmetn.SearchActivity">
+
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        tools:ignore="MissingConstraints" >
+
+        <EditText
+            android:id="@+id/mSearchView"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/shape_top_round_white"
+            android:hint="搜索"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"/>
+
+    </com.example.arttower.design.CommonTitle>
+
+<FrameLayout
+    android:id="@+id/sousuo_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+</LinearLayout>

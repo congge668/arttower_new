@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyTransmitActivity">
+
+    <EditText
+        android:id="@+id/zhuanfa_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:background="@null"
+        android:hint="输入想说的话。。。。。" />
+
+    <TextView
+        android:id="@+id/zhuanfa_fasong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_26"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <com.example.arttower.design.CommonTitle
+        android:id="@+id/zhuanfa_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="转发" />
+    
+    <ImageView
+        android:id="@+id/zhuanfa_image"
+        android:layout_width="@dimen/dp_64"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:src="@drawable/zhanweitun"
+        android:layout_height="@dimen/dp_64"/>
+    
+    <LinearLayout
+        android:layout_width="@dimen/dp_250"
+        android:background="@color/cl_f4f4f4"
+        android:layout_marginLeft="@dimen/dp_64"
+        android:layout_alignLeft="@id/zhuanfa_image"
+        android:layout_alignBottom="@id/zhuanfa_image"
+        android:orientation="vertical"
+        android:layout_height="@dimen/dp_64">
+    
+        <TextView
+            android:id="@+id/zhuanfa_name"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:textColor="@color/cl_4d4c4b"
+            android:text=" @ 康明那"
+            android:layout_height="@dimen/dp_20"/>
+
+         <TextView
+             android:id="@+id/zhuanfa_conent"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:textColor="@color/cl_4d4c4b"
+            android:text="保持微笑，好运始终会与你相遇。"
+            android:layout_height="@dimen/dp_20"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_84"
+    android:paddingTop="@dimen/dp_3"
+    android:paddingBottom="@dimen/dp_3">
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_first"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_22"
+            />
+
+        <TextView
+            android:id="@+id/text_first"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_17"
+            android:layout_below="@id/image_first"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_1"
+            android:layout_marginBottom="@dimen/dp_13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_second"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_second"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_22"
+            />
+
+        <TextView
+            android:id="@+id/text_second"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_17"
+            android:layout_below="@id/image_second"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_1"
+            android:layout_marginBottom="@dimen/dp_13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_third"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_third"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/text_third"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/sp_17"
+            android:textSize="@dimen/sp_12"
+            android:gravity="center"
+            android:layout_below="@+id/image_third"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fourth"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_fourth"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_22"
+            />
+
+        <TextView
+            android:id="@+id/text_fourth"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_17"
+            android:layout_below="@id/image_fourth"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_1"
+            android:layout_marginBottom="@dimen/dp_13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fifth"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_fifth"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_22"
+            />
+
+        <TextView
+            android:id="@+id/text_fifth"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_17"
+            android:layout_below="@id/image_fifth"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_1"
+            android:layout_marginBottom="@dimen/dp_13" />
+    </RelativeLayout>
+</LinearLayout>

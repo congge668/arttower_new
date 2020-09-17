@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/llcc"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f4f4f4"
+    android:orientation="vertical"
+    tools:context=".activity.MainZhanghuActivity">
+
+    <com.example.arttower.design.CommonTitle
+        android:id="@+id/AccountData_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="账号资料"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_157"
+        android:layout_alignBottom="@id/psd_login_title"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_108"
+            android:text="头像"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18" />
+
+        <ImageView
+
+            android:scaleType="fitXY"
+            android:id="@+id/touxiang"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginLeft="@dimen/dp_265"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_93"
+            android:src="@drawable/zhanweitu" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+
+        <TextView
+            android:layout_width="@dimen/dp_359"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_72"
+            android:background="@color/cl_f2f2f2" />
+
+        <!--  昵称  -->
+        <TextView
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_81"
+            android:layout_marginBottom="@dimen/dp_51"
+            android:text="昵称"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18" />
+
+
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_22"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_83"
+            android:layout_marginBottom="@dimen/dp_52"
+            android:text="B路人"
+            android:textColor="@color/cl_707070"
+            android:textSize="@dimen/sp_15" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_82"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+
+        <TextView
+            android:layout_width="@dimen/dp_359"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_114"
+            android:background="@color/cl_f2f2f2" />
+
+        <!-- 个性签名 -->
+        <TextView
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_123"
+            android:layout_marginBottom="@dimen/dp_9"
+            android:text="个性签名"
+            android:textColor="@color/cl_231304"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/data_md5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_125"
+            android:layout_marginBottom="@dimen/dp_52"
+            android:text="暂未设置个性签名"
+            android:textColor="@color/cl_707070"
+            android:textSize="@dimen/dp_15" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_124"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_126"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+    <!-- 性别 -->
+        <TextView
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:text="性别"
+            android:textColor="@color/cl_231304"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_select_sex"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_295"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginBottom="@dimen/dp_52"
+            android:text="保密"
+            android:textColor="@color/cl_707070"
+            android:textSize="@dimen/dp_15" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+
+        <TextView
+            android:layout_width="@dimen/dp_359"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@color/cl_f2f2f2" />
+        <!-- 生日 -->
+        <TextView
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_51"
+            android:text="生日"
+            android:textColor="@color/cl_231304"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_shengri"
+            android:layout_width="@dimen/dp_106"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_229"
+            android:layout_marginTop="@dimen/dp_52"
+            android:layout_marginBottom="@dimen/dp_52"
+            android:text="1990年1月1日"
+            android:textColor="@color/cl_707070"
+            android:textSize="@dimen/dp_15" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_51"
+            android:layout_marginBottom="@dimen/dp_51"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+
+        <TextView
+            android:layout_width="@dimen/dp_359"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_83"
+            android:layout_marginBottom="@dimen/dp_42"
+            android:background="@color/cl_f2f2f2" />
+    <!-- 电子邮箱 -->
+        <TextView
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_92"
+            android:layout_marginBottom="@dimen/dp_9"
+            android:text="电子邮箱"
+            android:textColor="@color/cl_231304"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_em"
+            android:layout_width="@dimen/dp_134"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:layout_marginTop="@dimen/dp_94"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_52"
+            android:text="listden@dance.com"
+            android:textColor="@color/cl_707070"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/zhanghu_quit"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_93"
+            android:layout_marginBottom="@dimen/dp_9"
+            android:layout_marginRight="@dimen/dp_16"
+            android:src="@mipmap/ic_jiantou_right" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/singout_submit"
+        android:layout_width="@dimen/dp_298"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_223"
+        android:background="@drawable/shape_submit"
+        android:gravity="center"
+        android:text="@string/retreatlogin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+
+</LinearLayout>

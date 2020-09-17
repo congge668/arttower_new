@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_view" />
+
+    <com.example.arttower.design.MyBottomView
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_84"
+        android:layout_alignParentBottom="true"
+        app:bottomNum="5"
+        app:bottomTextSize="@dimen/sp_11"
+        app:changeDrawable="true"
+        app:changeTextColor="true"
+        app:imageSelectedFifth="@drawable/mine"
+        app:imageSelectedFirst="@drawable/home"
+        app:imageSelectedFourth="@drawable/course"
+        app:imageSelectedSecond="@drawable/local"
+        app:imageSelectedThird="@drawable/test"
+        app:imageUnSelectedFifth="@drawable/mine_un"
+        app:imageUnSelectedFirst="@drawable/home_un"
+        app:imageUnSelectedFourth="@drawable/course_un"
+        app:imageUnSelectedSecond="@drawable/local_un"
+        app:imageUnSelectedThird="@drawable/test_un"
+        app:textFifth="@string/mine"
+        app:textFirst="@string/home"
+        app:textFourth="@string/course"
+        app:textSecond="@string/local"
+        app:textSelectedColor="@color/app_theme_color"
+        app:textThird="@string/test"
+        app:textUnSelectedColor="@color/bottom_text_unselected" />
+
+
+</RelativeLayout>

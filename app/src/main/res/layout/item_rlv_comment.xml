@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/comment_item_image"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/touxiang2" />
+
+    <ImageView
+        android:id="@+id/item_rlv_comment_dianzan"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_14"
+        android:src="@drawable/parisedown" />
+
+    <TextView
+        android:id="@+id/item_rlv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_52"
+        android:layout_marginTop="@dimen/dp_22"
+        android:text="康明那" />
+
+    <TextView
+        android:id="@+id/item_rlv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_26"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toLeftOf="@id/item_rlv_comment_dianzan"
+        android:text="3.3W" />
+
+    <TextView
+        android:id="@+id/item_rlv_data"
+        android:layout_width="@dimen/dp_279"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="突然，她从窗口旋风般地转过身来站在壁镜前面。她两眼晶莹透亮。"
+        android:textColor="@color/cl_231304"
+        android:textSize="@dimen/sp_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_rlv_huifu"
+        android:layout_width="@dimen/dp_267"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_100" />
+
+</RelativeLayout>

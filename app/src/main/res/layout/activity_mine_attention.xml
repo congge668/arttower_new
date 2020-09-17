@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WdInformActivity">
+
+    <com.example.arttower.design.CommonTitle
+        android:id="@+id/title_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:moreImg="@mipmap/ic_more"
+        app:titleText="我的关注" />
+
+<!--    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_attention"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:layout_below="@id/title_attention"
+        android:background="@color/white"
+        app:xTabIndicatorColor="@color/app_theme_color"
+        app:xTabIndicatorHeight="@dimen/dp_2"
+        app:xTabSelectedTextColor="@color/app_theme_color"
+        app:xTabSelectedTextSize="@dimen/sp_14"
+        app:xTabTextColor="@color/black"
+        app:xTabTextSize="@dimen/sp_14" />-->
+    <TextView
+        android:id="@+id/guanzhu_te"
+        android:layout_width="match_parent"
+        android:layout_below="@id/title_attention"
+        android:textSize="@dimen/sp_30"
+        android:textColor="@color/cl_ff7b00"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attention_rlv"
+        android:layout_width="match_parent"
+        android:layout_below="@id/title_attention"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

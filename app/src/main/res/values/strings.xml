@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">听舞</string>
+    <string name="loading">加载中</string>
+    <string name="home">首页</string>
+    <string name="local">教师</string>
+    <string name="test">考级</string>
+    <string name="course">课程</string>
+    <string name="mine">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">搜索</string>
+    <string name="auth_code">请输入验证码</string>
+    <string name="phone_num">请输入手机号码</string>
+    <string name="submit">提交</string>
+    <string name="other_login">其他方式登录</string>
+    <string name="wechat">微信</string>
+    <string name="qq">     QQ</string>
+    <string name="sina">微博</string>
+    <string name="user_name">请输入用户名</string>
+    <string name="password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="phone_login">手机号快速登录</string>
+    <string name="forget_psd">忘记密码</string>
+    <string name="next">下一步</string>
+    <string name="retreatlogin">退出登录</string>
+    <string name="phone">手机号</string>
+    <string name="startcode">开始认证</string>
+    <string name="learninggoal">学习目的</string>
+    <string name="specialtyCustom">专业定制</string>
+    <string name="allcourse">全部课程</string>
+    <string name="huodongcourse">活动课程</string>
+    <string name="fabiao">发表</string>
+    <string name="theatr">院校咨讯   ></string>
+    <string name="dashicourse">大师课</string>
+    <string name="Immediatelyapply">立即报名</string>
+    <string name="buy">立即购买</string>
+
+    <!--aliPlayer所用到的-->
+    <string name="alivc_player_tip_last_video">已经是最后一个视频了</string>
+    <string name="alivc_player_net_unconnect">无网络</string>
+    <string name="alivc_operator_play">运营商网络下播放</string>
+    <string name="classisfy">编辑分类</string>
+    <string name="confirm">确认订单</string>
+    <string name="custion">支付成功</string>
+</resources>

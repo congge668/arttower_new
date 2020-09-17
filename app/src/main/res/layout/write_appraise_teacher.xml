@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/write_return"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:src="@mipmap/returnleft" />
+
+        <TextView
+            android:layout_width="@dimen/dp_270"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center"
+            android:text="写评价"
+
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="存草稿"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center">
+
+        <com.example.arttower.design.StarBar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            app:starCount="5"
+            app:starDistance="@dimen/dp_16"
+            app:starEmpty="@mipmap/start_off"
+            app:starFill="@mipmap/start_on"
+            app:starSize="@dimen/dp_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:text="给"
+            android:textColor="@color/cl_4d4c4b"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/up_teacher_quiz_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:text="李妍"
+            android:textColor="@color/cl_ff7b00"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:text="老师评分"
+            android:textColor="@color/cl_4d4c4b"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_61"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@null"
+            android:hint="老师特别好，对孩子认真负责，心细，授课认真，孩子很快就学会了，还学到很多技巧，老师真是棒棒的，推荐此老师！"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@color/cl_c2c0be" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:background="@color/cl_c2c0be" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/cl_231304"
+            android:text="选择评价课程"
+            android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="@dimen/dp_24"
+        android:src="@mipmap/ic_jiantou_right"
+        android:layout_alignParentRight="true"
+        android:layout_height="@dimen/dp_24"/>
+    </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:background="@color/cl_c2c0be" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="匿名评论"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:textColor="@color/cl_231304"
+            android:textSize="@dimen/sp_18"
+            android:layout_height="wrap_content"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="@dimen/dp_48"
+            android:thumb="@drawable/switch_button_thump"
+            android:track="@drawable/switch_button_selector"
+            android:layout_marginLeft="@dimen/dp_200"
+          />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@color/cl_c2c0be" />
+    <Button
+        android:id="@+id/up_teacher_submit"
+        android:layout_width="@dimen/dp_298"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@drawable/shape_next"
+        android:gravity="center"
+        android:text="@string/fabiao"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+</LinearLayout>

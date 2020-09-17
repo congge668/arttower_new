@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relationdata"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TestPage.view.OrganizationActivity">
+
+    <ImageView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_72"
+        android:background="@mipmap/zhongxie" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_104"
+        android:layout_marginTop="@dimen/dp_129"
+        android:src="@mipmap/select_kuang" />
+
+    <TextView
+        android:layout_width="@dimen/dp_255"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_104"
+        android:layout_marginTop="@dimen/dp_80"
+        android:text="北京舞蹈学院社会艺术水平考级简章（芭蕾舞）"
+        android:textColor="@color/cl_4d4c4b"
+        android:textSize="@dimen/sp_14" />
+
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="机构咨询" />
+
+    <TextView
+        android:layout_width="@dimen/dp_24"
+        android:textColor="@color/cl_c2c0be"
+        android:text="999+"
+        android:textSize="@dimen/sp_10"
+        android:layout_marginLeft="@dimen/dp_124"
+        android:layout_marginTop="@dimen/dp_129"
+        android:layout_height="@dimen/sp_14"/>
+
+    <TextView
+        android:textSize="@dimen/sp_10"
+        android:text="2019-10-29"
+        android:textColor="@color/cl_c2c0be"
+        android:layout_marginTop="@dimen/dp_131"
+        android:layout_marginLeft="@dimen/dp_279"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_14"/>
+
+
+</RelativeLayout>

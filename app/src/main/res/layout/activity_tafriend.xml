@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TafriendActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57"
+        android:background="@color/app_theme_color">
+
+    <!--    <ImageView
+            android:id="@+id/haoyou_ta_back"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:src="@drawable/back_icon" />-->
+
+        <TextView
+            android:id="@+id/tx_ta"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:text="TA的好友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_tahaoyou"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:layout_below="@id/local_title"
+        android:background="@color/white"
+        app:xTabIndicatorColor="@color/app_theme_color"
+        app:xTabIndicatorHeight="@dimen/dp_2"
+        app:xTabIndicatorWidth="@dimen/dp_188"
+        app:xTabSelectedTextColor="@color/app_theme_color"
+        app:xTabSelectedTextSize="@dimen/sp_14"
+        app:xTabTextColor="@color/black"
+        app:xTabTextSize="@dimen/sp_14" />
+
+   <!-- <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_ta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_local" />-->
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tab_local"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

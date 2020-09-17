@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TestPage.view.TestDataActivity">
+    <com.example.arttower.design.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backImage="@drawable/back_icon"
+        app:canBack="true"
+        app:titleText="详情" />
+    <TextView
+        android:layout_width="@dimen/dp_338"
+        android:layout_marginLeft="@dimen/sp_10"
+        android:layout_marginTop="@dimen/dp_64"
+        android:textColor="@color/cl_231304"
+        android:text="北京舞蹈学院舞蹈考级院2019年9月莲花桥校区中国舞少儿班招插班生安排"
+        android:textSize="@dimen/sp_18"
+        android:layout_height="@dimen/dp_52"/>
+
+    <TextView
+        android:textSize="@dimen/sp_10"
+        android:text="2019-10-29"
+        android:textColor="@color/cl_c2c0be"
+        android:layout_marginTop="@dimen/dp_126"
+        android:layout_marginLeft="@dimen/dp_289"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_14"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_129"
+        android:src="@mipmap/select_kuang" />
+    <TextView
+        android:layout_width="@dimen/dp_24"
+        android:textColor="@color/cl_c2c0be"
+        android:text="999+"
+        android:textSize="@dimen/sp_10"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_129"
+        android:layout_height="@dimen/sp_14"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="@dimen/sp_14"
+        android:text="一、报名方式：使用微信关注“北京舞蹈学院舞蹈考级院”公众号，关注公众号并进入公众号，选择学生考级->学员中心->选择相应培训学校->注册账号->我的->我的孩子里面添加孩子的相关报名信息。
+
+二、收费标准：报名费：50元/人
+
+中国舞：培训费： 1-6级2700元/学期/人         7-8级3000元/学期/人          9-13级4200元/学期/人
+
+芭蕾舞：培训费： 1-2级3000元/学期/人         3-4级3800元/学期/人          5-8级4500元/学期/人
+
+三、新生报名时，请根据实际情况选择校区与上课时间，报名后不予调整。因虚报年龄而引起的一切经济损失自行承担。"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_marginTop="@dimen/dp_160"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_height="@dimen/dp_410"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="app_theme_color">#FF7B00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_theme">#000000</color>
+    <color name="black">#000000</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+    <color name="grey_first">#222222</color>
+    <color name="bottom_text_selected">#2DD881</color>
+    <color name="bottom_text_unselected">#555555</color>
+    <color name="text_search">#ffdae1e0</color>
+    <color name="text_goldRing">#555555</color>
+    <color name="text_four">#434343</color>
+
+    <color name="cl_e4e1de">#E4E1DE</color>
+    <color name="cl_f2f2f2">#F2F2F2</color>
+    <color name="cl_4d4c4b">#4D4C4B</color>
+    <color name="cl_ffe4e1de">#ffe4e1de</color>
+    <color name="cl_ff7b00">#ff7b00</color>
+    <color name="cl_ffc400">#ffc400</color>
+    <color name="cl_666666">#666666</color>
+    <color name="cl_333333">#333333</color>
+    <color name="cl_231304">#231304</color>
+    <color name="cl_f8f8f8">#fff8f8f8</color>
+    <color name="cl_707070">#707070</color>
+    <color name="cl_ffec3978">#ffec3978</color>
+    <color name="cl_c2c0be">#C2C0BE</color>
+    <color name="cl_f4f4f4">#F4F4F4</color>
+    <color name="cl_FF0041">#ff2c54</color>
+    <color name="cl_00BC1B">#00BC1B</color>
+    <color name="light_gray">#fff5f5f5</color>
+    <color name="color_link">#FFDDA4</color>
+    <color name="cl_e1deda">#E1DEDA</color>
+    <color name="cl_dae1e0">#DAE1E0</color>
+
+
+
+    <color name="color_weibo_iconbg">#EF1200</color>
+    <color name="color_wechat_iconbg">#00BC1B</color>
+    <color name="color_qq_iconbg">#12B7F5</color>
+    <color name="color_qqzone_iconbg">#FF9F00</color>
+    <color name="color_more_iconbg">#256EB2</color>
+</resources>

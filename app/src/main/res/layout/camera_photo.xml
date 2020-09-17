@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_collection"
+    android:layout_height="@dimen/dp_213"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:layout_width="@dimen/dp_48"
+    android:textColor="@color/cl_c2c0be"
+    android:textSize="@dimen/sp_12"
+    android:text="修改头像"
+    android:layout_marginLeft="@dimen/dp_160"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_height="@dimen/dp_17"/>
+<LinearLayout
+    android:id="@+id/photo"
+    android:layout_width="@dimen/dp_72"
+    android:background="@drawable/shape_submit"
+    android:layout_marginLeft="@dimen/dp_84"
+    android:layout_marginTop="@dimen/dp_65"
+    android:layout_height="@dimen/dp_72">
+    <ImageView
+        android:layout_width="@dimen/dp_36"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:src="@drawable/phote"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/dp_36"/>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/camera"
+    android:layout_width="@dimen/dp_72"
+    android:background="@drawable/shape_purple"
+    android:layout_marginLeft="@dimen/dp_220"
+    android:layout_marginTop="@dimen/dp_65"
+    android:layout_height="@dimen/dp_72">
+    <ImageView
+        android:layout_width="@dimen/dp_36"
+        android:src="@drawable/camear"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/dp_36"/>
+</LinearLayout>
+    <TextView
+        android:layout_width="@dimen/dp_98"
+        android:text="从手机相册选择"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_marginTop="@dimen/dp_141"
+        android:layout_marginLeft="@dimen/dp_71"
+        android:layout_height="@dimen/dp_20"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_28"
+        android:text="拍照"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/cl_4d4c4b"
+        android:layout_marginTop="@dimen/dp_141"
+        android:layout_marginLeft="@dimen/dp_242"
+        android:layout_height="@dimen/dp_20"/>
+</RelativeLayout>
