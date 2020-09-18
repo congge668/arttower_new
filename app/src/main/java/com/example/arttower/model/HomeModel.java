@@ -56,6 +56,15 @@ public class HomeModel implements ICommonModel {
                 content = (String) t[5];
                 mManager.method(mManager.getNetManager().getNetService().queryCommentList(offset,rows,userId,videoId,uid,content), view, whichApi);
                 break;
+            case ApiConfig.add_home_comment:
+                offset = (int) t[0];
+                rows = (int) t[1];
+                userId= (String) t[2];
+                videoId= (String) t[3];
+                uid= (String) t[4];
+                content = (String) t[5];
+                mManager.method(mManager.getNetManager().getNetService().addHomeComment(offset,rows,userId,videoId,uid,content), view, whichApi);
+                break;
 
         }
     }

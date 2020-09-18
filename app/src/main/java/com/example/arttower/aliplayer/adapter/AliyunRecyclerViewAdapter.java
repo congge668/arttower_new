@@ -20,14 +20,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.arttower.Frame.ApiConfig;
 import com.example.arttower.R;
 import com.example.arttower.activity.OtherpageActivity;
 import com.example.arttower.bean.VideoInfo;
 import com.example.arttower.fragment.HomePage.bean.HomeBean;
 import com.example.arttower.fragment.HomePage.dialog.Share_popDialog;
+import com.example.arttower.other.HomeCommentDialogEvent;
 import com.example.arttower.utils.image.ImageLoaderImpl;
 import com.example.arttower.utils.image.ImageLoaderOptions;
 import com.example.arttower.utils.image.ImageLoaderRequestListener;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
@@ -98,6 +102,13 @@ public class AliyunRecyclerViewAdapter extends RecyclerView.Adapter<AliyunRecycl
                 }
             }
         }
+
+        holder.pinglun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EventBus.getDefault().post(new HomeCommentDialogEvent(ApiConfig.home_comment_list,mData.get(position).getId(),mData.get(position).getUid(),mData.get(position).getVideoContent(),true));
+            }
+        });
     }
 
     private void loadPicture(final MyViewHolder holder, String coverPath, final ImageView iv) {

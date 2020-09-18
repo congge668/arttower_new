@@ -154,6 +154,6 @@ public class ApiConfig {
 
     public static final int AliOrder = 2100;//支付宝订单
 
-    public static final int home_comment_list = 2056;//支付宝订单
-
+    public static final int home_comment_list = 2056;//首页评论列表
+    public static final int add_home_comment = 2057;//添加首页评论
 }

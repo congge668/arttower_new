@@ -1,5 +1,6 @@
 package com.example.arttower.fragment.HomePage.Recommend;
 
+import android.app.Dialog;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
@@ -8,15 +9,22 @@ import android.widget.ImageView;
 import com.example.arttower.Frame.ApiConfig;
 import com.example.arttower.Frame.BaseMvpFragment;
 import com.example.arttower.R;
+import com.example.arttower.adapter.HomeCommentAdapter;
 import com.example.arttower.aliplayer.view.AliyunListPlayerView;
 import com.example.arttower.eventbus.EventBusUtils;
 import com.example.arttower.fragment.HomePage.bean.HomeBean;
+import com.example.arttower.local_utils.SharedPrefrenceUtils;
 import com.example.arttower.model.HomeModel;
+import com.example.arttower.other.DialogUtils;
+import com.example.arttower.other.HomeAddCommentBean;
+import com.example.arttower.other.HomeCommentDialogEvent;
+import com.example.arttower.other.HomeCommentListBean;
 import com.example.arttower.utils.NetWatchdog;
 import com.example.arttower.utils.PauseVideoEvent;
 import com.example.arttower.utils.ToastUtils;
 
 import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -38,6 +46,10 @@ public class VideoListFragment extends BaseMvpFragment<HomeModel> {
     private int rows = 10;
     // 总共有几页
     private int total = 0;
+
+    private HomeCommentDialogEvent homeCommentDialogEvent;
+    private HomeCommentAdapter homeCommentAdapter;
+
     @Override
     public int getLayoutId() {
         return R.layout.fragment_videolist;
@@ -54,9 +66,30 @@ public class VideoListFragment extends BaseMvpFragment<HomeModel> {
 
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onHomeCommentDialogEvent(HomeCommentDialogEvent event){
+        switch (event.getApiConfig()){
+            case ApiConfig.home_comment_list:
+                homeCommentDialogEvent = event;
+                if (event.isClickPinglu()){
+                    homeCommentAdapter = null;
+                }
+                mPresenter.getData(ApiConfig.home_comment_list,offset,rows, "51fde5a3def8754d1d7a2716862293f0",event.getId(),
+                        event.getUid(),event.getVideoContent());
+                break;
+            case ApiConfig.add_home_comment:
+                mPresenter.getData(ApiConfig.add_home_comment,offset,rows, "51fde5a3def8754d1d7a2716862293f0",event.getId(),
+                        event.getUid(),event.getVideoContent());
+                break;
+        }
+
+
+    }
+
     private void refreshListDatas() {
         offset = 1;
         getDatas(offset);
+
     }
 
     private void getDatas(int offset) {
@@ -123,6 +156,26 @@ public class VideoListFragment extends BaseMvpFragment<HomeModel> {
                 }
 
                 break;
+            case ApiConfig.home_comment_list:
+                HomeCommentListBean homeCommentListBean = (HomeCommentListBean)t[0];
+                if (homeCommentListBean.getData() != null){
+                    Log.i("home_comment_list",homeCommentListBean.getData().getTotal()+"");
+                    if (homeCommentAdapter == null){
+                        homeCommentAdapter = DialogUtils.homeCommentDialog(getContext(),homeCommentListBean.getData().getRows(),homeCommentDialogEvent);
+                    } else {
+                        homeCommentAdapter.setNewDatas(homeCommentListBean.getData().getRows());
+                    }
+                }
+
+                break;
+            case ApiConfig.add_home_comment:
+                HomeAddCommentBean homeAddCommentBean = (HomeAddCommentBean)t[0];
+                if (homeAddCommentBean != null && homeAddCommentBean.getData() != null && homeAddCommentBean.getData().getResult().equals("1") && homeCommentAdapter != null){
+
+                    mPresenter.getData(ApiConfig.home_comment_list,offset,rows, "51fde5a3def8754d1d7a2716862293f0",homeCommentDialogEvent.getId(),
+                            homeCommentDialogEvent.getUid(),homeCommentDialogEvent.getVideoContent());
+                }
+                break;
         }
     }
 
@@ -136,6 +189,7 @@ public class VideoListFragment extends BaseMvpFragment<HomeModel> {
             }
         }
     }
+
 
 
     @Override

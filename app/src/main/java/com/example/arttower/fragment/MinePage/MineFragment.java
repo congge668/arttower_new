@@ -31,6 +31,7 @@ import com.example.arttower.activity.WdInformActivity;
 import com.example.arttower.bean.MineBean;
 import com.example.arttower.bean.MyMineBannerBean;
 import com.example.arttower.fragment.MinePage.view.MineFansActivity;
+import com.example.arttower.local_utils.SharedPrefrenceUtils;
 import com.example.arttower.model.MineModel;
 import com.youth.banner.Banner;
 
@@ -244,6 +245,8 @@ public class MineFragment extends BaseMvpFragment<MineModel> {
                 data = mineBean.getData();
                 //获取当前用户id
                 userId = data.getUserId();
+                Log.i("userIduserId",userId);
+                SharedPrefrenceUtils.saveString(getContext(),"mineUserId","");
                 if (data != null) {
                     Glide.with(getContext()).load(data.getHeadUrl()).into(icMineHead);//头像
                     userName.setText(data.getNickName());//用户名

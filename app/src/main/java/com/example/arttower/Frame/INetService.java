@@ -45,6 +45,8 @@ import com.example.arttower.fragment.LocalPage.bean.InlandTeacherBean;
 import com.example.arttower.fragment.LocalPage.bean.TeacherCouserBean;
 import com.example.arttower.fragment.LocalPage.bean.TeacherDataBean;
 import com.example.arttower.fragment.TestPage.view.TestFragmentBean;
+import com.example.arttower.other.HomeAddCommentBean;
+import com.example.arttower.other.HomeCommentListBean;
 
 import java.io.File;
 
@@ -392,8 +394,16 @@ public interface INetService {
     @GET("ypt/account/queryDanceMoney")
     Observable<ToUpWuBiBean> gettoupWubInfo(@Query("deviceType") String deviceType);
 
+    //首页评论列表
     @GET("ypt/video/queryCommentList")
-    Observable<BaseTestBean> queryCommentList(@Query("offset") int offset,@Query("rows") int rows,@Query("userId") String userId,
-                                              @Query("videoId") String videoId,@Query("uid") String uid,
-                                              @Query("content") String content);
+    Observable<HomeCommentListBean> queryCommentList(@Query("offset") int offset, @Query("rows") int rows, @Query("userId") String userId,
+                                                     @Query("videoId") String videoId, @Query("uid") String uid,
+                                                     @Query("content") String content);
+
+    //首页视频新增评论
+    @POST("ypt/video/addComment")
+    @FormUrlEncoded
+    Observable<HomeAddCommentBean> addHomeComment(@Field("offset") int offset, @Field("rows") int rows, @Field("userId") String userId,
+                                                  @Field("videoId") String videoId, @Field("uid") String uid,
+                                                  @Field("content") String content);
 }
